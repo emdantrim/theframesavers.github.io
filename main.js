@@ -16,7 +16,6 @@ function loadRecentEpisode(data)
 {
 	if (!data || !data.length) return;
 	var w = $('#main-container').innerWidth();
-	if (w < 500) return;
 	
 	$('#recent-ep').empty().append(makeSoundcloudEmbed(data[0].id, w));
 	$('#recent-ep-toggle').show();
