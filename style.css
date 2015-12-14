@@ -1,0 +1,89 @@
+@font-face
+{
+	font-family: Square;
+	src: url(fonts/Square.ttf);
+}
+
+@font-face
+{
+	font-family: Roboto;
+	src: url(fonts/Roboto-Thin.ttf);
+}
+
+body
+{
+	background: rgb(48, 51, 51);
+	background: -moz-linear-gradient(20deg, rgb(32, 35, 35) 15%, rgb(48, 51, 51) 85%);
+	background: -webkit-linear-gradient(20deg, rgb(32, 35, 35) 15%, rgb(48, 51, 51) 85%);
+	background: -o-linear-gradient(20deg, rgb(32, 35, 35) 15%, rgb(48, 51, 51) 85%);
+	background: -ms-linear-gradient(20deg, rgb(32, 35, 35) 15%, rgb(48, 51, 51) 85%);
+	background: linear-gradient(110deg, rgb(32, 35, 35) 15%, rgb(48, 51, 51) 85%);
+	color: #CCC;
+}
+
+.screen-centered
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.centered { text-align: center; }
+.clear { clear: both; }
+.hidden { display: none; }
+
+.links
+{
+	float: right;
+}
+
+.links a
+{
+	padding-left: 10px;
+}
+
+.main
+{
+	width: 800px;
+}
+
+.logo
+{
+	float: left;
+	clear: none;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.title
+{
+	color: #EEE;
+	text-align: center;
+	font: 48pt Square, sans;
+	margin: 0;
+}
+
+.subtitle
+{
+	text-align: center;
+	font: 24pt Roboto, sans;
+	margin: 0 auto;
+}
+
+#recent-ep-label
+{
+	font: 18pt Roboto, sans;
+}
+
+#recent-ep-container
+{
+	text-align: left;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.subtitle .highlight
+{
+	color: #F53;
+}
