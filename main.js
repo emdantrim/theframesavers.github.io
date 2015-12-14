@@ -1,7 +1,7 @@
-function makeSoundcloudEmbed(track)
+function makeSoundcloudEmbed(track, w)
 {
 	var embed = $('<iframe>');
-	embed.attr('width', 600).attr('height', 166);
+	embed.attr('width', w).attr('height', 166);
 	embed.attr('scrolling', 'no');
 	embed.attr('frameborder', 'no');
 	
@@ -15,7 +15,10 @@ function makeSoundcloudEmbed(track)
 function loadRecentEpisode(data)
 {
 	if (!data || !data.length) return;
-	$('#recent-ep').empty().append(makeSoundcloudEmbed(data[0].id));
+	var w = $('#main-container').innerWidth();
+	if (w < 500) return;
+	
+	$('#recent-ep').empty().append(makeSoundcloudEmbed(data[0].id, w));
 	$('#recent-ep-toggle').show();
 }
 

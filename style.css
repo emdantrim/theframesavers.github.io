@@ -19,56 +19,73 @@ body
 	background: -ms-linear-gradient(20deg, rgb(32, 35, 35) 15%, rgb(48, 51, 51) 85%);
 	background: linear-gradient(110deg, rgb(32, 35, 35) 15%, rgb(48, 51, 51) 85%);
 	color: #CCC;
+	
+	margin: 0;
+	padding: 0;
 }
 
-.screen-centered
+#main-container
 {
+	width: 100%;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
-.centered { text-align: center; }
-.clear { clear: both; }
-.hidden { display: none; }
-
-.links
+#header
 {
-	float: right;
-}
-
-.links a
-{
-	padding-left: 10px;
-}
-
-.main
-{
-	width: 800px;
+	text-align: center;
 }
 
 .logo
 {
-	float: left;
-	clear: none;
-	margin-right: 10px;
+	clear: both;
 	margin-bottom: 10px;
+}
+
+.logo img
+{
+	width: 100%;
+	height: auto;
 }
 
 .title
 {
 	color: #EEE;
 	text-align: center;
-	font: 48pt Square, sans;
+	font: 3em Square, sans;
 	margin: 0;
+	
+	display: none;
 }
 
 .subtitle
 {
 	text-align: center;
-	font: 24pt Roboto, sans;
+	font: 1.2em/1.3em Roboto, sans;
 	margin: 0 auto;
+}
+
+.subtitle .highlight
+{
+	color: #F53;
+}
+
+#links
+{
+	clear: both;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#links a
+{
+	padding-left: 10px;
+}
+
+#recent-ep-toggle
+{
+	clear: both;
+	text-align: center;
+	display: none;
 }
 
 #recent-ep-label
@@ -83,7 +100,45 @@ body
 	display: inline-block;
 }
 
-.subtitle .highlight
+/* handling non-mobile */
+@media screen and (min-width: 850px)
 {
-	color: #F53;
+
+.logo
+{
+	float: left;
+	clear: none;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.logo img
+{
+	width: 200px;
+}
+
+#main-container
+{
+	width: 800px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#links
+{
+	float: right;
+}
+
+.title
+{
+	font-size: 4em;
+	display: block;
+}
+
+.subtitle
+{
+	font-size: 2em;
+}
+
 }
