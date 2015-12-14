@@ -18,6 +18,9 @@ body
 	background: -o-linear-gradient(20deg, rgb(32, 35, 35) 15%, rgb(48, 51, 51) 85%);
 	background: -ms-linear-gradient(20deg, rgb(32, 35, 35) 15%, rgb(48, 51, 51) 85%);
 	background: linear-gradient(110deg, rgb(32, 35, 35) 15%, rgb(48, 51, 51) 85%);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	
 	color: #CCC;
 	
 	margin: 0;
