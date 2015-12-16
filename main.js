@@ -6,7 +6,7 @@ function makeSoundcloudEmbed(track, w)
 	embed.attr('frameborder', 'no');
 	
 	var url = 'https%3A//api.soundcloud.com/tracks/' + track;
-	var xtra = '&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false';
+	var xtra = '&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false';
 	
 	// replace the player if the size is too small
 	if (w < 500)
