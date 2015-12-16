@@ -2,12 +2,16 @@
 {
 	font-family: Square;
 	src: url(fonts/Square.ttf);
+	src: url(fonts/Square.woff) format('woff'),
+	     url(fonts/Square.eof) format('embedded-opentype');
 }
 
 @font-face
 {
 	font-family: Roboto;
 	src: url(fonts/Roboto-Thin.ttf);
+	src: url(fonts/Roboto-Thin.woff) format('woff'),
+	     url(fonts/Roboto-Thin.eof) format('embedded-opentype');
 }
 
 body

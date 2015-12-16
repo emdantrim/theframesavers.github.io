@@ -31,5 +31,6 @@ function loadRecentEpisode(data)
 
 $(document).ready(function()
 {
-	$.get('http://api.soundcloud.com/users/170373327/tracks?client_id=cae8c1ce283582cf5c51176d3f3e6f81', loadRecentEpisode, 'json');
+	var ts = +new Date();
+	$.get('http://api.soundcloud.com/users/170373327/tracks?client_id=cae8c1ce283582cf5c51176d3f3e6f81&__time=' + ts, loadRecentEpisode, 'json');
 });
