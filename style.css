@@ -26,6 +26,7 @@ body
     background-attachment: fixed;
 	
 	color: #CCC;
+	font-family: Roboto;
 	
 	margin: 0;
 	padding: 0;
@@ -81,11 +82,21 @@ body
 	clear: both;
 	text-align: center;
 	margin-top: 10px;
+	font-size: 1.5em;
 }
 
 #links a
 {
-	padding-left: 10px;
+	text-decoration: none;
+	font-variant: small-caps;
+	font-weight: bold;
+	color: white;
+	display: block;
+	
+	padding: 8px 0;
+	margin: 15px;
+	border: 1px solid white;
+	background: rgb(60, 60, 60);
 }
 
 #recent-ep-toggle
@@ -146,6 +157,28 @@ body
 .subtitle
 {
 	font-size: 2em;
+}
+
+#links
+{
+	font-size: 1.5em;
+}
+
+#links a
+{
+	display: inline-block;
+	color: #F33;
+	
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: transparent;
+}
+
+#links a + a::before
+{
+	content: " * ";
+	color: white;
 }
 
 }
