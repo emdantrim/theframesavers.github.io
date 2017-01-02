@@ -24,10 +24,10 @@ body
 	background: linear-gradient(110deg, rgb(32, 35, 35) 15%, rgb(48, 51, 51) 85%);
 	background-repeat: no-repeat;
     background-attachment: fixed;
-	
+
 	color: #CCC;
 	font-family: Roboto;
-	
+
 	margin: 0;
 	padding: 0;
 }
@@ -61,7 +61,8 @@ body
 	text-align: center;
 	font: 3em Square, sans;
 	margin: 0;
-	
+	padding: 10px;
+
 	display: none;
 }
 
@@ -70,6 +71,7 @@ body
 	text-align: center;
 	font: 1.2em/1.3em Roboto, sans;
 	margin: 0 auto;
+	padding: 10px;
 }
 
 .subtitle .highlight
@@ -85,18 +87,10 @@ body
 	font-size: 1.5em;
 }
 
-#links a
+#links img
 {
-	text-decoration: none;
-	font-variant: small-caps;
-	font-weight: bold;
-	color: white;
-	display: block;
-	
-	padding: 8px 0;
-	margin: 15px;
-	border: 1px solid white;
-	background: rgb(60, 60, 60);
+	height: 40px;
+	margin: 5px;
 }
 
 #recent-ep-toggle
@@ -109,6 +103,7 @@ body
 #recent-ep-label
 {
 	font: 18pt Roboto, sans;
+	padding: 10px;
 }
 
 #recent-ep-container
@@ -156,29 +151,13 @@ body
 
 .subtitle
 {
+	padding: inherit;
 	font-size: 2em;
 }
 
-#links
+#recent-ep-label
 {
-	font-size: 1.5em;
-}
-
-#links a
-{
-	display: inline-block;
-	color: #F33;
-	
-	padding: 0;
-	margin: 0;
-	border: none;
-	background: transparent;
-}
-
-#links a + a::before
-{
-	content: " * ";
-	color: white;
+	padding: inherit;
 }
 
 }
